@@ -97,6 +97,29 @@ const startProject = async () => {
 
 app.use(bodyParser.json());
 
+app.get("/webhook", (req, res) => {
+  downloadFile(url, outputFile)
+    .then(() =>
+      executeCommandAsync(
+        "npm",
+        ["run", "clean-api-docs", ["all"]],
+        "Clean API Docs 🧹"
+      )
+    )
+    .then(() =>
+      executeCommandAsync(
+        "npm",
+        ["run", "gen-api-docs", ["all"]],
+        "Generate API Docs ⚙"
+      )
+    )
+    .then(() => executeCommandAsync("yarn", ["start"], "Start project 🚀"))
+    .then((result) => console.log(result))
+    .catch((error) => console.error(error));
+  console.log("Recebido webhook:", req.body);
+  res.status(200).send("Webhook recebido com sucesso!");
+});
+
 app.get("/", (req, res) => {
   downloadFile(url, outputFile)
     .then(() =>
