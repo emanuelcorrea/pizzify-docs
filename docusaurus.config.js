@@ -8,7 +8,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "Pizzify",
   tagline: "We love pizza",
-  url: "https://emanuelcorrea.dev",
+  url: "https://docs.pizzify.emanuelcorrea.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "emanuelcorrea", // Usually your GitHub org/user name.
+  projectName: "pizzify-docs", // Usually your repo name.
 
   presets: [
     [
@@ -29,7 +29,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/emanuelcorrea/pizzify-backend/edit/main/docs/",
           docLayoutComponent: "@theme/DocPage",
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
         },
@@ -88,10 +88,10 @@ const config = {
         docsPluginId: "classic",
         config: {
           api: {
-            specPath: "examples/api.yaml",
+            specPath: "https://pizzify.onrender.com/v3/api-docs?group=full-api",
             outputDir: "docs/api",
             downloadUrl:
-              "https://raw.githubusercontent.com/PaloAltoNetworks/docusaurus-template-openapi-docs/main/examples/petstore.yaml",
+              "https://pizzify.onrender.com/v3/api-docs?group=full-api",
             sidebarOptions: {
               groupPathsBy: "tag",
               categoryLinkSource: "tag",
@@ -101,7 +101,6 @@ const config = {
       },
     ],
   ],
-
   themes: ["docusaurus-theme-openapi-docs"],
 };
 
