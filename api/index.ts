@@ -75,25 +75,25 @@ const startProject = async () => {
     .catch((error) => console.error(error));
 };
 
-startProject();
+// startProject();
 
-downloadFile(url, outputFile)
-  .then(() =>
-    executeCommand(
-      "npm",
-      ["run", "clean-api-docs", ["all"]],
-      "Clean API Docs 🧹"
-    )
-  )
-  .then(() =>
-    executeCommand(
-      "npm",
-      ["run", "gen-api-docs", ["all"]],
-      "Generate API Docs ⚙"
-    )
-  )
-  .then((result) => console.log(result))
-  .catch((error) => console.error(error));
+// downloadFile(url, outputFile)
+//   .then(() =>
+//     executeCommand(
+//       "npm",
+//       ["run", "clean-api-docs", ["all"]],
+//       "Clean API Docs 🧹"
+//     )
+//   )
+//   .then(() =>
+//     executeCommand(
+//       "npm",
+//       ["run", "gen-api-docs", ["all"]],
+//       "Generate API Docs ⚙"
+//     )
+//   )
+//   .then((result) => console.log(result))
+//   .catch((error) => console.error(error));
 
 app.use(bodyParser.json());
 
