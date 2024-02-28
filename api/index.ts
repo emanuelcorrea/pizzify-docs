@@ -8,8 +8,10 @@ const port = 3000;
 const http = require("http");
 const fs = require("fs");
 
-const outputFile = "./examples/api.yaml";
-const url = "http://localhost:8080/v3/api-docs?group=full-api";
+const outputFile = "../examples/api.yaml";
+const url =
+  "https://raw.githubusercontent.com/PaloAltoNetworks/docusaurus-template-openapi-docs/main/examples/petstore.yaml";
+// const url = "http://localhost:8080/v3/api-docs?group=full-api";
 
 const downloadFile = (url, outputPath) => {
   return new Promise((resolve, reject) => {
