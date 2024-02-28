@@ -8,7 +8,7 @@ const port = 3001;
 const http = require('http');
 const fs = require('fs');
 
-const outputFile = './examples/api.yaml';
+const outputFile = './exaasasasasmples/api.yaml';
 const url = 'http://localhost:8080/v3/api-docs?group=full-api';
 
 const downloadFile = (url, outputPath) => {
