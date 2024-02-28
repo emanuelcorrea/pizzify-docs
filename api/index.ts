@@ -5,7 +5,7 @@ const { spawn } = require("cross-spawn");
 const app = express();
 const port = 3000;
 
-const http = require("http");
+const https = require("https");
 const fs = require("fs");
 
 const outputFile = "../examples/api.yaml";
@@ -17,7 +17,7 @@ const downloadFile = (url, outputPath) => {
   return new Promise((resolve, reject) => {
     const file = fs.createWriteStream(outputPath);
 
-    http
+    https
       .get(url, (response) => {
         response.pipe(file);
 
