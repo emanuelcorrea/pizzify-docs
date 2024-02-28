@@ -101,7 +101,6 @@ const config = {
       },
     ],
   ],
-
   themes: ["docusaurus-theme-openapi-docs"],
 };
 
