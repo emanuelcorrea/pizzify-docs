@@ -1,0 +1,40 @@
+---
+id: find-all-1
+title: "Retrieves a list of customers"
+description: "Retrieves a list of customers"
+sidebar_label: "Retrieves a list of customers"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVU01vEzEQ/SvWnI2Scqp8ixCqegJROEVRNbEnWRevbTyzW6KV/zvyBqIlrajYy1rj9+bjvfEEgkcGs4UPA0vqqTDsNKRMBcWneO/AwMFHtwnh8QY0FOKcIhODmeD9et1+jtgWnxseDDwM1hLzYQjhBBpsikJRGg5zDt7OeVdP3MATsO2ox3aSUyYwgKVg43mhnhfxtH8iK6Ahl9ad+HML3i0wLMXHI2g4pNKjgIFh8A6qhog9vQRWDdSjD6/eZGR+TuWV/FWDLYRC7hHln+UdCr0T31PjDNn9J6dqEC+h4f7YA3X+9JXoX0iKp5FYoQqeRaWDshdHNfQkXWpeHmnWEKUDA6slhKmM7WS2EwwlgIFOJJvVKiSLoUss5nZ9u4br0ncU27KQU+cMqpHrToOPhzRP+nuEh2c8HqmoT5niJvsXiTaf75UjpjimMHqHKmNBJcRCrFxa8FqfZ87N7FRi6XFep7PPb8rxV+GLF0I/ZZUD+jjbVea9OEu1Bbt8H02NFpymPTJ9K6HWFv4xUDmB2e40jFg87tvc213V0BE6KrO23+nUhrWWcrNixDDMe3/9OJqEF9vuPn6FWn8BW8BEHQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api/swagger-openapi
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import TabItem from "@theme/TabItem";
+
+<h1 className={"openapi__heading"}>Retrieves a list of customers</h1>
+
+<MethodEndpoint method={"get"} path={"/customers"}></MethodEndpoint>
+
+
+
+Retrieves a list of customers
+
+## Request
+
+<div><div><ApiTabs><TabItem label={"200"} value={"200"}><div>
+
+Successfully
+
+</div><div><MimeTabs className={"openapi-tabs__mime"} schemaType={"response"}><TabItem label={"application/json"} value={"application/json"}><SchemaTabs className={"openapi-tabs__schema"}><TabItem label={"Schema"} value={"Schema"}><details style={{}} className={"openapi-markdown__details response"} data-collapsed={false} open={true}><summary style={{}} className={"openapi-markdown__details-summary-response"}><strong>Schema</strong></summary><div style={{"textAlign":"left","marginLeft":"1rem"}}></div><ul style={{"marginLeft":"1rem"}}><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}>Array [</div></li><SchemaItem collapsible={false} name={"id"} required={false} schemaName={"uuid"} qualifierMessage={undefined} schema={{"type":"string","format":"uuid"}}></SchemaItem><SchemaItem collapsible={false} name={"name"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"email"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"password"} required={false} schemaName={"string"} qualifierMessage={undefined} schema={{"type":"string"}}></SchemaItem><SchemaItem collapsible={false} name={"created_at"} required={false} schemaName={"date-time"} qualifierMessage={undefined} schema={{"type":"string","format":"date-time"}}></SchemaItem><SchemaItem collapsible={false} name={"updated_at"} required={false} schemaName={"date-time"} qualifierMessage={undefined} schema={{"type":"string","format":"date-time"}}></SchemaItem><li><div style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}>]</div></li></ul></details></TabItem><TabItem label={"Example (from schema)"} value={"Example (from schema)"}><ResponseSamples responseExample={"[\n  {\n    \"id\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n    \"name\": \"string\",\n    \"email\": \"string\",\n    \"password\": \"string\",\n    \"created_at\": \"2024-02-27T22:35:49.132Z\",\n    \"updated_at\": \"2024-02-27T22:35:49.132Z\"\n  }\n]"} language={"json"}></ResponseSamples></TabItem></SchemaTabs></TabItem></MimeTabs></div></TabItem></ApiTabs></div></div>
+      
