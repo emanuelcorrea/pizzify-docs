@@ -88,10 +88,10 @@ const config = {
         docsPluginId: "classic",
         config: {
           api: {
-            specPath: "https://pizzify.onrender.com/v3/api-docs?group=full-api",
+            specPath: "https://api.pizzify.emanuelcorrea.dev/v3/api-docs?group=full-api",
             outputDir: "docs/api",
             downloadUrl:
-              "https://pizzify.onrender.com/v3/api-docs?group=full-api",
+              "https://api.pizzify.emanuelcorrea.dev/v3/api-docs?group=full-api",
             sidebarOptions: {
               groupPathsBy: "tag",
               categoryLinkSource: "tag",
